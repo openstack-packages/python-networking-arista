@@ -16,7 +16,7 @@ BuildRequires:  python2-devel
 BuildRequires:  python-mock
 BuildRequires:  python-neutron-tests
 BuildRequires:  python-oslo-sphinx
-BuildRequires:  python-oslotest
+#BuildRequires:  python-oslotest
 BuildRequires:  python-pbr
 BuildRequires:  python-setuptools
 BuildRequires:  python-sphinx
@@ -32,7 +32,7 @@ This package contains %{vendor} networking driver for OpenStack Neutron.
 
 
 %prep
-%setup -q -n %{srcname}-%{version}
+%setup -q -n %{srcname}-%{upstream_version}
 
 
 %build
@@ -42,14 +42,16 @@ rm requirements.txt test-requirements.txt
 rm %{docpath}/.buildinfo
 
 
-%check
-%{__python2} setup.py testr
+#%check
+#%{__python2} setup.py testr
 
 
 %install
+export PBR_VERSION=%{version}
+export SKIP_PIP_INSTALL=1
 %{__python2} setup.py install --skip-build --root $RPM_BUILD_ROOT
 
- 
+
 %files
 %doc LICENSE
 %doc %{docpath}
