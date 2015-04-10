@@ -53,7 +53,7 @@ export SKIP_PIP_INSTALL=1
 
 
 %files
-%doc LICENSE
+%license LICENSE
 %doc %{docpath}
 %{python2_sitelib}/%{srcname}
 %{python2_sitelib}/%{srcname}-%{version}-py%{python2_version}.egg-info
