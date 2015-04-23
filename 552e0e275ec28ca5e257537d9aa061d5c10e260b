@@ -1,0 +1,7 @@
+Verified+1: Ihar Hrachyshka <ihrachys@redhat.com>
+Code-Review+2: Alan Pevec <alan.pevec@redhat.com>
+Submitted-by: Alan Pevec <alan.pevec@redhat.com>
+Submitted-at: Thu, 23 Apr 2015 16:50:57 +0200
+Reviewed-on: https://review.gerrithub.io/229913
+Project: openstack-packages/python-networking-arista
+Branch: refs/heads/f20-master
