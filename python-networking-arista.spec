@@ -1,11 +1,11 @@
-%global vendor Arista
+%global drv_vendor Arista
 %global srcname networking_arista
 %global docpath doc/build/html
 
 Name:           python-%{srcname}
 Version:        2015.1.2
 Release:        1%{?dist}
-Summary:        %{vendor} OpenStack Neutron driver
+Summary:        %{drv_vendor} OpenStack Neutron driver
 
 License:        ASL 2.0
 URL:            https://pypi.python.org/pypi/%{srcname}
@@ -28,7 +28,7 @@ Requires:       python-pbr
 
 
 %description
-This package contains %{vendor} networking driver for OpenStack Neutron.
+This package contains %{drv_vendor} networking driver for OpenStack Neutron.
 
 
 %prep
