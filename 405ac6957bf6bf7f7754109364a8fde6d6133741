@@ -1,0 +1,7 @@
+Verified+1: rdo-ci-jenkins <brad+jenkins@redhat.com>
+Code-Review+2: Jakub Libosvar <jakub.libosvar@gmail.com>
+Submitted-by: Haïkel Guémar <haikel.guemar@gmail.com>
+Submitted-at: Thu, 03 Sep 2015 17:20:41 +0200
+Reviewed-on: https://review.gerrithub.io/244146
+Project: openstack-packages/python-networking-arista
+Branch: refs/heads/rpm-master
