@@ -1,11 +1,14 @@
 %global drv_vendor Arista
 %global srcname networking_arista
+%global pkgname networking-arista
 %global docpath doc/build/html
 
-Name:           python-%{srcname}
+Name:           python-%{pkgname}
 Version:        2015.1.2
 Release:        1%{?dist}
 Summary:        %{drv_vendor} OpenStack Neutron driver
+Provides:       python-%{srcname} = %{version}-%{release}
+Obsoletes:      python-%{srcname}
 
 License:        ASL 2.0
 URL:            https://pypi.python.org/pypi/%{srcname}
@@ -60,5 +63,5 @@ chmod 640 %{buildroot}%{_sysconfdir}/neutron/plugins/ml2/*.ini
 %license LICENSE
 %doc %{docpath}
 %{python2_sitelib}/%{srcname}
-%{python2_sitelib}/%{srcname}-%{version}-py%{python2_version}.egg-info
+%{python2_sitelib}/%{srcname}*.egg-info
 %config(noreplace) %attr(0640, root, neutron) %{_sysconfdir}/neutron/plugins/ml2/*.ini
